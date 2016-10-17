@@ -37,16 +37,7 @@ var View = React.createClass({
 					if (!Keystone.orphanedLists.length) return;
 					return (
 						<div className="nav-section">
-							<h4>Other</h4>
-							<ul>
-								{Keystone.orphanedLists.map((list) => {
-									return (
-										<li key={list.path}>
-											<a href={'/keystone/' + list.path}>{list.label}</a>
-										</li>
-									);
-								})}
-							</ul>
+
 						</div>
 					);
 				})()}
